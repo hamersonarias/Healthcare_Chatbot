@@ -14,7 +14,6 @@ file.close()
 
 app = Flask(__name__)
 
-
 english_bot = ChatBot('Bot',
              storage_adapter='chatterbot.storage.SQLStorageAdapter',
              logic_adapters=[
@@ -42,7 +41,6 @@ def get_bot_response():
     appendfile.close()
 
     return response
-
 
 if __name__ == "__main__":
     app.run()
